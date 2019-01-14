@@ -10,7 +10,6 @@ body {
   padding: 0px;
   font-family: 'Open Sans', sans-serif;
   background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
-
 }
 
 .profile-picture {
@@ -24,11 +23,17 @@ body {
   display: flex;
   flex-direction: row;
   height: 80%;
+  font-family: monospace;
 }
 
 .name {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 2px;
+}
+
+.about {
+  font-family: monospace;
+  font-size: 15px;
 }
 
 .left, .right {
@@ -59,11 +64,26 @@ body {
 .social-links a {
   text-decoration: none;
   padding: 4px;
+  font-family: Roboto, sans-serif;
 }
 
 .social-links a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.subtitle {
+  font-family: : monospace;
+  font-size: 18px;
+}
+
+.bio {
+  font-size: 18px;
+}
+
+.bio a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 /* attempting to make the site responsive on Mobile */
 @media screen and (max-width: 768px) {
