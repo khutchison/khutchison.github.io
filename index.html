@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
-      <title>index.html</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-      <meta name="description" content="Programming and hardware projects">
-      <meta name="keywords" content="HTML, CSS, JavaScript, HDL, Python">
+      <meta charset="utf-8">
       <meta name="author" content="Kirk Hutchison">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="HandheldFriendly" content="true">
+      <meta name="description" content="Computer science, programming, machine learning, and fiction writing.">
+      <meta name="keywords" content="CS, computer science, programming, Python, Go AI, Ubuntu Server">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="canonical" href="https://www.kirkhutchison.com/">
+      <title>Home - kirkhutchison.com</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <style>
+      /* add some vertical padding for the introduction */
+      body { padding-top: 15px; }
+      /* make the sections reflow; better than fixed-width tables */
+      article section { display:inline-block; vertical-align:top; }
+      /* leave enough horizontal room to show multiple sections simultaneously, table-like */
+      body { max-width: 1500px; }
+      /* align the section headers nicely with the lists of pages for desktop; otherwise keep default mobile spacing of lists */
+      @media screen and (min-width: 650px) {
+      li { margin-top: 0em; }
+      li p { margin: 0em; }
+      h1 { padding-left: 0.6em; } }</style>
    </head>
-   <!-- The last two meta tags  -->
    <body>
-      <div class="wrapper">
-         <div class="left">
-            <img src="IMG-0737.JPG" width="400px" alt="" class="profile-picture"/>
-            <h1 class="name">Kirk Hutchison</h1>
-            <p class="subtitle">programmer and writer</h2>
+      <main>
+         <div id="sidebar">
+            <div id="logo">
+               <img alt="Logo: a combined K and H in black." src="logo.png" height="75" width="64">
+            </div>
+            <div id="sidebar-links">
+               <div id="internal-links">
+                  <a href="./index.html" title="The web home of Kirk Hutchison. I code, study computer science, and write.">Home</a>
+                  <a href="./writing.html" title="Writing: home of the epic fantasy web serial The Founding Cycle and other stuff.">Writing</a>
+               </div>
+               <hr>
+               <div id="social-links">
+                  <ul>
+                     <li><a href="https://github.com/khutchison" target="_blank" title="My personal Github with projects in Python, HTML/CSS and JavaScript.">GitHub</a></li>
+                     <li><a href="https://www.linkedin.com/in/kirk-hutchison-64b088168" target="_blank" title="My LinkedIn account, which includes my work history.">LinkedIn</a></li>
+                  </ul>
+               </div>
+               <hr>
+            </div>
          </div>
-      
-         <div class="right">
-            <p class="bio">
-               Learning computer science and writing stories. Right now I'm excited about building a <a href = "https://github.com/khutchison/alephgo" target="_blank">command line Go player</a> in Python. Next up, AI for the game! 
-            </p>
-            <ul class="social-links">
-               <li><a href="https://github.com/khutchison" target="_blank">GitHub</a></li>
-               <li><a href="https://www.linkedin.com/in/kirk-hutchison-64b088168" target="_blank">LinkedIn</a></li>
-               <li><a href="./writing.html" target="_blank">Writing</a></li>
-            </ul>
-         </div>
-      </div>
+         <article>
+            <div id="markdownbody">
+               <p> This is the website of <strong>Kirk Hutchison</strong>, writer & programmer. I am interested in machine learning, software design, computing, fantasy, science fiction, & home fermentation (cabbage, not hops). </p>
+            </div>            
+         </article>
+      </main> 
    </body>
 </html>
